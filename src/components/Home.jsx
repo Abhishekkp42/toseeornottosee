@@ -25,7 +25,7 @@ export default function Home() {
         setLoading(false);
         setData(res.data);
       })
-      .catch((err) => {
+      .catch(() => {
         setLoading(false);
         setData([]);
         setErr(true);
